@@ -1,22 +1,15 @@
 
 document.getElementById("get-started-btn").addEventListener('click',() =>{
+
     const getUsername = document.getElementById('input-username')
     const username = getUsername.value;
     // console.log(username)
     const getPin = document.getElementById('input-pin');
     const pin = getPin.value;
     // console.log(pin)
-    if(username.length<3 || username.length>30) {
-        alert("Username Must be 3 to 30 characters containing only letters, numbers or dash");
-        getUsername.value = "";
-    }
-    else if(pin!=123456) {
-        alert(`Please! Input the pin 123456`);
-        getPin.value = "";
-    }
 
     //Action after successfully login
-    if(username.length>=3 || username.length<=30 && pin === 123456) {
+    if((username.length>=3 || username.length<=30) && pin == 123456) {
         //Clear the input field
         getUsername.value = "";
         getPin.value = "";
@@ -42,5 +35,17 @@ document.getElementById("get-started-btn").addEventListener('click',() =>{
         alert("Login Request Successful");     
 
     }
+
+    
+    if(username.length<3 || username.length>30) {
+        alert("Username Must be 3 to 30 characters containing only letters, numbers or dash");
+        getUsername.value = "";
+    }
+    else if(pin!=123456) {
+        alert(`Please! Input the pin 123456`);
+        getPin.value = "";
+    }
+
+    
 
 })
