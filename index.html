@@ -26,11 +26,9 @@
     }
     </style>
 </head>
-<!-- bg-blue-50 class should be added -->
-<body id="body" class="poppins ">
+<body id="body" class="poppins bg-blue-50">
     <header class="">
-        <!-- hidden Class should be added and flex should be remove -->
-        <nav id="nav-section" class="border-b-4 border-solid border-blue-100 py-4 px-6 md:px-10 lg:px-[4.5rem]  flex fixed top-0 left-0 w-full z-50  justify-between items-center bg-blue-50 ">
+        <nav id="nav-section" class="border-b-4 border-solid border-blue-100 py-4 px-6 md:px-10 lg:px-[4.5rem]  hidden fixed top-0 left-0 w-full z-50  justify-between items-center bg-blue-50 ">
             <div id="logo" class="cursor-pointer " href="#body">
                 <p class="flex justify-center items-center gap-1 font-semibold text-lg">English
                     <img src="assets/logo.png" alt="logo" class="">
@@ -44,13 +42,13 @@
                 <button id="nav-learn-btn" class="btn btn-outline btn-primary hidden md:flex">
                     <i class="fa-solid fa-book-open"></i>Learn
                 </button>
-                <button class="btn btn-outline btn-primary">
+                <button id="logout-btn" class="btn btn-outline btn-primary">
                     <img src="assets/fa-arrow-right-from-bracket.png" alt="arrow-right-from-bracket-icon">Logout
                 </button>
             </div>
         </nav>
         <!-- Banner Section -->
-        <div class="mb-[1.5rem] md:mb-[2rem] lg:mb-[3rem] xl:mb-[4rem] px-6 md:px-10 lg:px-[4.5rem] mt-10 md:mt-0 md:flex justify-between items-center " id="banner">
+        <div class="px-6 md:px-10 lg:px-[4.5rem] mt-10 md:mt-0 md:flex justify-between items-center " id="banner">
             <div class="md:w-1/2">
                 <h1 class="mb-5 text-4xl font-bold"><span class="text-[#00BCFF]">English</span> is Easy!</h1>
                 <p class="mb-8">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি 
@@ -77,7 +75,7 @@
     </header>
     <main class="">
         <!-- Learn Section    hidden class should be added -->
-        <section id="learn-section" class="mt-[1.5rem] md:mt-[2rem] lg:mt-[3rem] xl:mt-[4rem] px-6 md:px-10 lg:px-[4.5rem] ">
+        <section id="learn-section" class="mt-[3rem] md:mt-[4rem] lg:mt-[6rem] xl:mt-[8rem] px-6 md:px-10 lg:px-[4.5rem] hidden">
             <h1 class="mb-6 md:mb-9 lg:mb-[3.5rem] text-3xl text-center font-bold"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h1>
             <!-- Button Container -->
             <div class="mb-6 md:mb-9 flex sm:flex-wrap md:justify-center items-center gap-5" id="learn-btn-container">
@@ -119,22 +117,28 @@
             </div>
         </section>
         <!--  FAQ Section   hidden class should be added-->
-        <div  class="py-4 px-6 md:px-10 lg:px-[4.5rem] space-y-5 " id="faq-section">
+        <div  class="py-4 px-6 md:px-10 lg:px-[4.5rem] space-y-5 hidden" id="faq-section">
             <h1 class="mb-8 md:mb-11 lg:mb-[4.5rem] text-3xl text-center font-bold"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h1>
             <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-blue-50">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title font-semibold">The difference between var, let, and const</div>
-                <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+                <div class="collapse-content text-sm">var is function-scoped and can be redeclared & updated, but it hoists with undefined. <br>
+                    let is block-scoped and can be updated but not redeclared in the same scope. <br>
+                    const is block-scoped and cannot be updated or redeclared after initialization.</div>
             </div>
             <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-blue-50">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title font-semibold">The difference between map(), forEach(), and filter()</div>
-                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+                <div class="collapse-content text-sm">map() creates and returns a new array by applying a function to each element. <br>
+                    forEach() executes a function for each element but does not return a new array. <br>
+                    filter() creates and returns a new array with elements that pass a condition.</div>
             </div>
             <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-blue-50">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title font-semibold">Explain arrow functions and how they are different from regular functions</div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                <div class="collapse-content text-sm">Arrow functions (=>) are a shorter syntax for writing functions in JavaScript. <br>
+                    They don't have their own this, so they inherit this from the surrounding scope. <br>
+                    Unlike regular functions, they cannot be used as constructors and dont have arguments object.</div>
             </div>
             <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-blue-50">
                 <input type="radio" name="my-accordion-3" checked="checked" />
@@ -144,7 +148,9 @@
             <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-blue-50">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title font-semibold">How closures work in JavaScript</div>
-                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+                <div class="collapse-content text-sm">Closures allow a function to remember and access its outer scope even after the outer function has executed. <br>
+                    They help in data encapsulation by keeping variables private. <br>
+                    Used in callbacks, event handlers, and maintaining state in JavaScript.</div>
             </div>
         </div>
         <hr id="hoirjontal-line" class="mt-[4rem] md:mt-[7rem] lg:mt-[10rem] mb-15 text-yellow-600 hidden">
@@ -168,7 +174,8 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="script/login.js"></script> -->
+    <script src="script/login.js"></script>
+     <script src="script/logout.js"></script>
     <script src="script/smooth-scrolling.js"></script>
     <script src="script/apiLoad.js"></script>
 </body>
