@@ -62,7 +62,7 @@ const displayWord = (selectedWordByLevel) => {
                                     <h2 class="text-2xl text-center text-gray-600 font-bold ">"${wordDetailes.meaning} / ${wordDetailes.pronunciation}"</h2>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <i class="fa-solid fa-circle-info text-2xl"></i>
+                                    <i onclick="my_modal_1.showModal()" class="fa-solid fa-circle-info text-2xl"></i>
                                     <i class="fa-solid fa-volume-high text-2xl"></i>
                                 </div>
                             </div>
