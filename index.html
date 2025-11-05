@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/f486a473f8.js" 
       crossorigin="anonymous">
     </script>
+
     <style>
         .poppins {
         font-family: "Poppins", sans-serif;
@@ -28,27 +29,46 @@
 </head>
 <body id="body" class="poppins bg-blue-50">
     <header class="">
-        <nav id="nav-section" class="border-b-4 border-solid border-blue-100 py-4 px-6 md:px-10 lg:px-[4.5rem]  hidden fixed top-0 left-0 w-full z-50  justify-between items-center bg-blue-50 ">
-            <div id="logo" class="cursor-pointer " href="#body">
-                <p class="flex justify-center items-center gap-1 font-semibold text-lg">English
+        <nav 
+        id="nav-section" 
+        class="border-b-4 border-solid border-blue-100 py-4 px-6 
+            md:px-10 lg:px-[4.5rem]  hidden md:hidden fixed top-0 left-0 w-full z-50  justify-between items-center bg-blue-50 "
+        >
+            <div 
+            id="logo" 
+            class="cursor-pointer " 
+            href="#body">
+                <p class="flex justify-center items-center gap-1 font-semibold text-lg">
+                    English
                     <img src="assets/logo.png" alt="logo" class="">
                     জানালা
                 </p>
             </div>
             <div class="flex justify-center items-center gap-4 ">
-                <button id="nav-faq-btn" class="btn btn-outline btn-primary hidden md:flex">
-                    <img class="hover:text-white" src="assets/fa-circle-question.png" alt="icon">FAQ
+                <button 
+                id="nav-faq-btn" 
+                class="btn btn-outline btn-primary hidden md:flex">
+                    <img class="hover:text-white" src="assets/fa-circle-question.png" alt="icon">
+                    FAQ
                 </button>
-                <button id="nav-learn-btn" class="btn btn-outline btn-primary hidden md:flex">
-                    <i class="fa-solid fa-book-open"></i>Learn
+                <button 
+                id="nav-learn-btn" 
+                class="btn btn-outline btn-primary hidden md:flex">
+                    <i class="fa-solid fa-book-open"></i>
+                    Learn
                 </button>
-                <button id="logout-btn" class="btn btn-outline btn-primary">
-                    <img src="assets/fa-arrow-right-from-bracket.png" alt="arrow-right-from-bracket-icon">Logout
+                <button 
+                id="logout-btn" 
+                class="btn btn-outline btn-primary">
+                    <img src="assets/fa-arrow-right-from-bracket.png" alt="arrow-right-from-bracket-icon">
+                    Logout
                 </button>
             </div>
         </nav>
         <!-- Banner Section -->
-        <div class="px-6 md:px-10 lg:px-[4.5rem] mt-10 md:mt-0 md:flex justify-between items-center " id="banner">
+        <div 
+        class="px-6 md:px-10 lg:px-[4.5rem] mt-10 md:mt-0 md:flex justify-between items-center " 
+        id="banner">
             <div class="md:w-1/2">
                 <h1 class="mb-5 text-4xl font-bold"><span class="text-[#00BCFF]">English</span> is Easy!</h1>
                 <p class="mb-8">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি 
@@ -74,17 +94,26 @@
         </div>
     </header>
     <main class="">
-        <!-- Learn Section    hidden class should be added -->
-        <section id="learn-section" class="mt-[3rem] md:mt-[4rem] lg:mt-[6rem] xl:mt-[8rem] px-6 md:px-10 lg:px-[4.5rem] hidden">
-            <h1 class="mb-6 md:mb-9 lg:mb-[3.5rem] text-3xl text-center font-bold"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h1>
+        <!-- Learn Section  -->
+        <section 
+        id="learn-section" 
+        class="mt-[3rem] md:mt-[4rem] lg:mt-[6rem] xl:mt-[8rem] px-6 md:px-10 lg:px-[4.5rem] hidden">
+            <h1 
+            class="mb-6 md:mb-9 lg:mb-[3.5rem] text-3xl text-center font-bold">
+                <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+            </h1>
             <!-- Button Container -->
-            <div class="mb-6 md:mb-9 flex sm:flex-wrap md:justify-center items-center gap-5" id="learn-btn-container">
-                <!-- <button class="btn btn-outline btn-primary hidden md:flex">
+            <div 
+            class="mb-6 md:mb-9 flex flex-wrap justify-center gap-5" 
+            id="learn-btn-container">
+                <!-- <button class="btn btn-outline btn-primary md:flex">
                     <i class="fa-solid fa-book-open"></i>Lesson-1
                 </button> -->
             </div>
             <!-- Word Card Container -->
-            <div class="mb-[3rem] md:mb-[5rem] xl:mb-[8rem] "  id="word-card-container">
+            <div 
+            class="mb-[3rem] md:mb-[5rem] xl:mb-[8rem]"  
+            id="word-card-container">
                 <!-- Default view -->
                 <div class="rounded-2xl py-14 space-y-4 bg-blue-50" id="">
                     <p class="text-center text-gray-500">আপনি এখনো কোন Lesson Select করেন ন</p>
@@ -92,7 +121,7 @@
                 </div>
 
 
-                <!-- <div id="word-card-container-inner" class="p-5 rounded-2xl grid grid-cols-3 gap-6 bg-blue-50">
+                <!-- <div id="word-card-container-inner" class="p-5 rounded-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-blue-50">
 
                     
                     <div id="word-card" class="px-12 rounded-xl py-12 space-y-10  bg-white">
@@ -117,7 +146,9 @@
             </div>
         </section>
         <!--  FAQ Section   hidden class should be added-->
-        <div  class="py-4 px-6 md:px-10 lg:px-[4.5rem] space-y-5 hidden" id="faq-section">
+        <div  
+        class="py-4 px-6 md:px-10 lg:px-[4.5rem] space-y-5 hidden" 
+        id="faq-section">
             <h1 class="mb-8 md:mb-11 lg:mb-[4.5rem] text-3xl text-center font-bold"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h1>
             <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-blue-50">
                 <input type="radio" name="my-accordion-3" checked="checked" />
@@ -153,8 +184,15 @@
                     Used in callbacks, event handlers, and maintaining state in JavaScript.</div>
             </div>
         </div>
-        <hr id="hoirjontal-line" class="mt-[4rem] md:mt-[7rem] lg:mt-[10rem] mb-15 text-yellow-600 hidden">
+        <hr 
+        id="hoirjontal-line" 
+        class="mt-[4rem] md:mt-[7rem] lg:mt-[10rem] mb-15 text-yellow-600 hidden"
+        >
     </main>
+    <!-- <div id="overlay-spinner" class="absolute w-full h-full bg-blue-100 bg-opacity-20 flex justify-center items-center hidden">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-cyan-800"></div>
+    </div> -->
+
     <footer class="pb-8 md:pb-16 lg:pb-20 py-4 px-6 md:px-10 lg:px-[4.5rem] flex justify-between items-center">
         <div class="w-1/2 md:w-auto">
             <p class="mb-5 flex items-center gap-1 font-semibold text-lg">English
@@ -174,20 +212,42 @@
             </div>
         </div>
     </footer>
-
-    <dialog id="my_modal_1" class="modal">
-        <div class="modal-box">
-          <h3 class="text-lg font-bold">Abundant</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
-          <div class="modal-action">
+    <!-- Unusual section -->
+    <section>
+        <!-- <dialog id="my_modal_1" class="modal">
+        <div class="modal-box space-y-2">
+          <h3 class="text-2xl font-bold ">Abundant</h3>
+          <h4 class="text-xl font-semibold">Meaning</h4>
+          <h4 class="text-xl font-[500]">আগ্রহী</h4>
+          <h4 class="text-xl font-semibold">Example</h4>
+          <p class="text-xl">The kids were eager to open their gifts.</p>
+          <h4 class="text-xl font-semibold">সমার্থক শব্দ গুলো</h4>
+          <div id="synonym-container" class="flex items-center justify-start gap-2">
+            <div class="rounded-lg px-2 py-1 lg:py-2 text-lg bg-cyan-50" id="synonyme">
+                <p class="">Enthusiastic</p>
+            </div>
+            <div class="rounded-lg px-2 py-1 lg:py-2 text-lg bg-cyan-50" id="synonyme">
+                <p class="">keen</p>
+            </div>
+            <div class="rounded-lg px-2 py-1 lg:py-2 text-lg bg-cyan-50" id="synonyme">
+                <p class="">excited</p>
+            </div>
+          </div>
+          <div class="modal-action text-start">
             <form method="dialog">
-              <button class="btn">Close</button>
+              <button class="btn bg-cyan-400 hover:bg-cyan-600 hover:scale-105 hover:-rotate-6 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-500 ease-in-out">Complete Learning</button>
             </form>
           </div>
         </div>
-      </dialog>
-
-      <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>  
+      </dialog>   -->
+        <!-- <div id="loading-spinner" class="fixed top-0 left-0 w-full h-full bg-white flex justify-center items-center z-50">
+            <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+        </div> -->
+    </section>
+    
+    
+    <script src="script/loadingSpinner.js"></script>
+    <script src="https://kit.fontawesome.com/f486a473f8.js" crossorigin="anonymous"></script>
     <script src="script/login.js"></script>
      <script src="script/logout.js"></script>
     <script src="script/smooth-scrolling.js"></script>
